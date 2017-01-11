@@ -15,7 +15,18 @@
     "url": "https://github.com/he3/gogo/issues"
   },
   "homepage": "https://github.com/he3/gogo#readme",
+  "scripts": {
+    "build": "babel src -d build -s inline",
+    "test": "ava test"
+  },
   "dependencies": {
-    "commander": "2.9.0"
+    "commander": "2.9.0",
+    "string": "^3.3.3"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-env": "^1.1.8"
   }
 }
